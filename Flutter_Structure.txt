@@ -1,0 +1,49 @@
+/my_flutter_app
+|-- android
+|-- ios
+|-- lib
+|   |-- main.dart
+|   |-- app.dart
+|   |-- config
+|   |   |-- constants.dart
+|   |   |-- routes.dart
+|   |-- models
+|   |   |-- user.dart
+|   |   |-- order.dart
+|   |   |-- (其他模型)
+|   |-- views       (screens 的部分比較特別，他可以隸屬於 views 也可以與 views 同級，要看開發、設計團隊的文化)
+|   |   |-- home
+|   |   |   |-- home_view.dart
+|   |   |   |-- home_controller.dart (如果使用如 GetX 或 Riverpod 等狀態管理工具)
+|   |   |-- login
+|   |   |   |-- login_view.dart
+|   |   |   |-- login_controller.dart
+|   |   |-- (其他畫面)
+|   |-- widgets
+|   |   |-- custom_button.dart
+|   |   |-- custom_text_field.dart
+|   |   |-- (其他自訂 widget)
+|   |-- services
+|   |   |-- api_service.dart
+|   |   |-- user_service.dart
+|   |   |-- (其他服務)
+|   |-- utils
+|   |   |-- validators.dart
+|   |   |-- (其他工具類)
+|   |-- data
+|   |   |-- dao
+|   |   |   |-- user_dao.dart
+|   |   |   |-- order_dao.dart
+|   |   |-- repository
+|   |   |   |-- user_repository.dart
+|   |   |   |-- order_repository.dart
+|   |-- state (如果使用如 Provider, Riverpod, Bloc 等狀態管理工具)
+|   |   |-- user_provider.dart
+|   |   |-- order_provider.dart
+|   |   |-- (其他狀態管理類)
+|-- test
+|   |-- widget_test.dart
+|   |-- (其他測試)
+|-- web
+|-- pubspec.yaml
+|-- README.md

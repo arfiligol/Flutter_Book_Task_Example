@@ -21,4 +21,19 @@ void main() {
   print("==== 沒有參數的函數，取值 ====");
   int getIntValueFromFunction = returnIntWithoutParameter();
   print(getIntValueFromFunction);
+
+  print("====在函數動態輸入數字，取值====");
+  double getDoubleFromFunctionParameters1 = returnDoubleWithParameter(5);
+  double getDoubleFromFunctionParameters2 = returnDoubleWithParameter(2);
+  print(getDoubleFromFunctionParameters1);
+  print(getDoubleFromFunctionParameters2);
+
+  print("====在函數動態輸入文字，取值====");
+  String getStringFromFunctionParameter1 = returnStringWithparameter("cxcxc");
+  String getStringFromFunctionParameter2 = returnStringWithparameter("大話 AWS");
+  print(getStringFromFunctionParameter1);
+  print(getStringFromFunctionParameter2);
+
+  print("====不需接收回傳值，調度函數====");
+  withoutReturnValueJustExecute();
 }
